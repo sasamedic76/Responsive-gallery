@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
 
+    <style>
+
+        body {
+            font-family: sans-serif;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #grid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+            grid-auto-rows: minmax(170px, auto);
+            gap: 16px;
+            align-items: start;
+            align-content: start;
+        }
+
+        img {
+            width: 170px;
+            height: auto;
+            background-color: blue;
+        }
+
+        div.placeholder {
+            width: 170px;
+            height: 170px;
+            background-image: url("placeholder-image.png");
+            text-align: center;       
+        }
+
+        .box { 
+            width: 170px;
+            height: auto;
+        }
+       
+        body p {
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: 170px;
+            }
+            
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: 170px;
+            }
+            
+        }
+
+        @media screen  and (max-width: 414px) {
+            .box {
+                width: 170px;
+            }
+            
+        }
+
+            
+        
+        
+    
+    </style>
+</head>
+<body>
+
+ <header> Gallery heading</header>
+
+ <div id="grid1">
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title 
+        </div>
+        
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+
+        <div class="placeholder">
+            <img src="placeholder-image.png" class="box">Image title
+        </div>
+       
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, possim similique qui et. Pro suas noluisse eleifend et. In sit corpora repudiare rationibus, duo nostrud graecis vituperatoribus et. Tempor debitis constituam ei quo, ne usu dolorum epicurei, tractatos adipiscing ius eu.
+
+        Verear labitur eu qui. Quo magna doming ex. Et omnium tibique temporibus quo. Eu vim quas atomorum.
+        
+        Ad doming placerat mel, timeam deterruisset consequuntur nec an. Te his hinc dictas, at nonumy corpora nam. Eos no nostro tacimates, cu ponderum accusata mei. Vis saepe dolorum adipisci in, cetero tincidunt ut eam, id duo unum dicit.
+        
+        Sint natum iusto pri ad, vim et quas augue omittantur. Ex ferri essent nam, ex vel commodo tacimates facilisis, cu mediocrem quaerendum neglegentur nec. Justo signiferumque ex est, elit similique cu cum. Cum erat molestiae dissentiunt ea, at everti detracto mediocritatem quo, sit dico legimus no. Unum definitiones mediocritatem qui no.
+        
+        Mea eros propriae constituam in, hendrerit abhorreant appellantur ut mei. Cu eum explicari constituto reprehendunt, pri mentitum maluisset definitiones an, ne duo clita audire. Idque definitionem his et. Everti evertitur sententiae cu cum, mea ex omnes persius vivendo. Cu ullum urbanitas ius, at debet forensibus sadipscing duo.</p>
+    
+</body>
+</html>
